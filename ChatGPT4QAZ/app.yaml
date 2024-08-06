@@ -1,0 +1,5 @@
+runtime: python311
+entrypoint: python Menu.py
+
+manual_scaling:
+  instances: 1
