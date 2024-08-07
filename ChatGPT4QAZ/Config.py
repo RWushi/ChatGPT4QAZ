@@ -5,10 +5,10 @@ import asyncpg
 
 
 DATABASE_CONFIG = {
-    'host': 'ec2-3-228-117-228.compute-1.amazonaws.com',
-    'database': 'dfmjadjl9tkjoa',
-    'user': 'irnzryzxxunrsp',
-    'password': '955451979ac51e833f7cc119cfafa42fc4e4fd9879ec048b894a966396808a01',
+    'host': '',
+    'database': '',
+    'user': '',
+    'password': '',
     'port': '5432',
     'ssl': 'require'
 }
@@ -46,7 +46,7 @@ class UserState(StatesGroup):
     style = State()
     information = State()
 
-bot = Bot(token='6495569809:AAHKnimIykXQgj117hwpdR7hEDs49QsBvTM')
+bot = Bot(token='')
 storage = PostgresStateStorage(**DATABASE_CONFIG)
 dp = Dispatcher(bot, storage=storage)
 
